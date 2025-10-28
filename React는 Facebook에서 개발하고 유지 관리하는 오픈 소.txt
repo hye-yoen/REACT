@@ -33,6 +33,7 @@ React는 Facebook에서 개발하고 유지 관리하는 오픈 소스 JavaScrip
 8. 지속적인 업데이트
  - Facebook에 의해 관리되고 있어 꾸준한 성능 개선 및 커뮤니티 피드백 반영
 
+//===========01====================
 
 
 이해하기 쉬운 사진 개요- JSX (JavaScript XML)
@@ -41,8 +42,11 @@ React는 Facebook에서 개발하고 유지 관리하는 오픈 소스 JavaScrip
 index.html: root -> index.js -> /app -> app.js
 
  <React.StrictMode>, </React.StrictMode>,reportWebVitals(); 주석 ->  의미 없음
+
+//===========02====================
+
  
-<새 파일(02) 만들기>
+<##새 파일(02) 만들기##>
 npx create-react-app 02
 
 git ignore 02 파일 추가
@@ -75,3 +79,28 @@ return (
 html
 </>
 )
+
+//===========03====================
+MyComponent.jsx
+
+const [count,setCount] = useState(1) //count 초기값 == 0 //Setter 
+
+//최초 1회 실행(1회만 랜더링 이후 처리 Hook)
+    useEffect(()=>{
+        console.log("init setting")
+    },[])//[] => 감시할 상태 변수
+
+
+
+//===========05====================
+
+여러줄 -> () 필요
+여러태그 <>(최소 빈태그 필요) 
+ex . (
+	 <>
+          	<p>로그인 완료</p>
+                <p>환영합니다</p>
+         </>
+       ) 
+
+

@@ -103,4 +103,10 @@ ex . (
          </>
        ) 
 
+//===========06====================
+REACT
+/ -> a(/about)http://localhost:3000 
+=> 새로 다시 요청됨(새로고침)
 
+=> a -> Link (import { Link } from "react-router-dom";)
+=> ##컴포넌트만 바꿈##

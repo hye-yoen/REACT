@@ -94,7 +94,7 @@ const [count,setCount] = useState(1) //count 초기값 == 0 //Setter
 
 //===========05====================
 
-여러줄 -> () 필요
+여러줄 -> () 필요	
 여러태그 <>(최소 빈태그 필요) 
 ex . (
 	 <>
@@ -110,3 +110,14 @@ REACT
 
 => a -> Link (import { Link } from "react-router-dom";)
 => ##컴포넌트만 바꿈##
+
+
+//===========07====================
+provider> app + context  ==>전역화 가능
+app에서 컴포넌트간의 데이터 공유 가능
+값들을 키,값 형태로 전달 -> "children"으로 받음
+
+//===========08====================
+index.html: root -> index.js -> /app -> app.js
+ 
+==> link | app.js : css, js 번들 추가
